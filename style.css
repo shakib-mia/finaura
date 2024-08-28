@@ -10,6 +10,10 @@ body {
   @apply font-body text-base;
 }
 
+::-webkit-scrollbar {
+  @apply w-0;
+}
+
 button {
   @apply rounded-md bg-primary px-5 py-3 text-white outline outline-2 outline-offset-0 outline-primary transition hover:bg-primary-dark focus:outline-offset-2 lg:px-10 lg:py-4;
 }

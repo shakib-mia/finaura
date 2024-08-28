@@ -2,178 +2,247 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Link to the favicon -->
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- Responsive viewport meta tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Finaura</title>
+    <!-- Link to AOS (Animate On Scroll) library stylesheet for animations -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Link to custom font styles -->
     <link rel="stylesheet" href="./font.css" />
+    <!-- Link to main custom stylesheet -->
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <nav>
-      <div
-        class="container absolute left-0 right-0 mx-auto flex items-center justify-between py-8 lg:items-center"
-      >
-        <a href="#" class="z-30">
-          <img src="./assets/images/logo.png" class="h-7 lg:h-14" alt="logo" />
-        </a>
-
-        <label for="nav-check" class="z-30 text-xl lg:hidden">
-          <i class="fas fa-bars"></i>
-        </label>
-        <input type="checkbox" class="hidden" id="nav-check" />
-
-        <ul
-          class="absolute left-0 top-0 z-10 flex h-0 w-full flex-col items-end gap-11 overflow-hidden bg-white px-4 transition-all duration-500 lg:static lg:h-auto lg:w-auto lg:flex-row lg:bg-transparent lg:pb-0 lg:pt-0 lg:shadow-none"
-          id="navbar"
+    <!-- Container for the entire page -->
+    <div class="w-screen overflow-x-hidden">
+      <!-- Navigation bar -->
+      <nav>
+        <!-- Container for navigation content, including logo and menu items -->
+        <div
+          class="container absolute left-0 right-0 mx-auto flex items-center justify-between py-8 lg:items-center"
         >
-          <li class="group">
-            <a class="transition hover:text-primary" href="#">About Us</a>
-            <div
-              class="ml-auto h-px w-0 bg-primary transition-[width] group-hover:ml-0 group-hover:w-full"
-            ></div>
-          </li>
-          <li class="group">
-            <a class="transition hover:text-primary" href="#">Features </a>
-            <div
-              class="ml-auto h-px w-0 bg-primary transition-[width] group-hover:ml-0 group-hover:w-full"
-            ></div>
-          </li>
-          <li class="group">
-            <a class="transition hover:text-primary" href="#">Card</a>
-            <div
-              class="ml-auto h-px w-0 bg-primary transition-[width] group-hover:ml-0 group-hover:w-full"
-            ></div>
-          </li>
-          <li class="group">
-            <a class="transition hover:text-primary" href="#">Testimonial</a>
-            <div
-              class="ml-auto h-px w-0 bg-primary transition-[width] group-hover:ml-0 group-hover:w-full"
-            ></div>
-          </li>
-          <li class="group">
-            <a class="transition hover:text-primary" href="#">Prizing</a>
-            <div
-              class="ml-auto h-px w-0 bg-primary transition-[width] group-hover:ml-0 group-hover:w-full"
-            ></div>
-          </li>
-        </ul>
-        <button class="hidden lg:block">Apply Now</button>
-      </div>
-    </nav>
-    <header
-      class="flex items-center bg-[size:0] bg-center bg-no-repeat py-36 lg:h-screen lg:bg-[size:100%] lg:py-0"
-      style="background-image: url(./assets/hero.jpg)"
-    >
-      <div class="container relative">
-        <div class="w-full text-center lg:w-1/2 lg:text-left">
-          <h1 data-aos="fade-right" data-aos-duration="1000">
-            Revolutionize Your Finances
-          </h1>
-          <p
-            class="mb-4 mt-4 text-base md:text-xl lg:mb-14 xl:text-2xl"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-          >
-            From easy money management, to financial goals and investments. Open
-            your account in at Finora
-          </p>
-          <div
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-delay="200"
-          >
-            <button>Get Your Card Today</button>
-          </div>
+          <!-- Logo -->
+          <a href="#" class="z-30">
+            <img
+              src="./assets/images/logo.png"
+              class="h-7 lg:h-14"
+              alt="logo"
+            />
+          </a>
 
-          <div class="mt-14 flex flex-col gap-6 md:flex-row lg:gap-12">
-            <aside class="w-full md:w-7/12">
-              <div class="flex justify-center lg:justify-start">
-                <div class="relative flex w-32 items-center">
-                  <img
-                    src="./assets/images/support/Ellipse 10.jpg"
-                    alt="support-1"
-                    class="absolute left-0 h-14 w-14 rounded-full"
+          <!-- Hamburger menu icon for mobile view -->
+          <label for="nav-check" class="z-30 text-xl lg:hidden">
+            <i class="fas fa-bars"></i>
+          </label>
+          <!-- Hidden checkbox for the mobile menu toggle -->
+          <input type="checkbox" class="hidden" id="nav-check" />
+
+          <!-- Navigation menu items -->
+          <ul
+            class="absolute left-0 top-0 z-10 flex h-0 w-full flex-col items-end gap-11 overflow-hidden bg-white px-4 transition-all duration-500 lg:static lg:h-auto lg:w-auto lg:flex-row lg:bg-transparent lg:pb-0 lg:pt-0 lg:shadow-none"
+            id="navbar"
+          >
+            <!-- About Us menu item -->
+            <li class="group">
+              <a class="transition hover:text-primary" href="#">About Us</a>
+              <!-- Underline effect on hover -->
+              <div
+                class="ml-auto h-px w-0 bg-primary transition-[width] group-hover:ml-0 group-hover:w-full"
+              ></div>
+            </li>
+            <!-- Features menu item -->
+            <li class="group">
+              <a class="transition hover:text-primary" href="#">Features</a>
+              <div
+                class="ml-auto h-px w-0 bg-primary transition-[width] group-hover:ml-0 group-hover:w-full"
+              ></div>
+            </li>
+            <!-- Card menu item -->
+            <li class="group">
+              <a class="transition hover:text-primary" href="#">Card</a>
+              <div
+                class="ml-auto h-px w-0 bg-primary transition-[width] group-hover:ml-0 group-hover:w-full"
+              ></div>
+            </li>
+            <!-- Testimonial menu item -->
+            <li class="group">
+              <a class="transition hover:text-primary" href="#">Testimonial</a>
+              <div
+                class="ml-auto h-px w-0 bg-primary transition-[width] group-hover:ml-0 group-hover:w-full"
+              ></div>
+            </li>
+            <!-- Prizing menu item -->
+            <li class="group">
+              <a class="transition hover:text-primary" href="#">Prizing</a>
+              <div
+                class="ml-auto h-px w-0 bg-primary transition-[width] group-hover:ml-0 group-hover:w-full"
+              ></div>
+            </li>
+          </ul>
+          <!-- Apply Now button for desktop view -->
+          <button class="hidden lg:block">Apply Now</button>
+        </div>
+      </nav>
+
+      <!-- Hero section -->
+      <header
+        class="flex items-center bg-[size:0] bg-center bg-no-repeat py-24 lg:h-screen lg:bg-[size:100%] lg:py-0"
+        style="background-image: url(./assets/hero.jpg)"
+      >
+        <!-- Container for hero content -->
+        <div class="container relative">
+          <div class="w-full text-center lg:w-1/2 lg:text-left">
+            <!-- Hero title with AOS animation -->
+            <h1 data-aos="fade-right" data-aos-duration="1000">
+              Revolutionize Your Finances
+            </h1>
+            <!-- Hero description with AOS animation -->
+            <p
+              class="mb-4 mt-4 text-base md:text-xl lg:mb-14 xl:text-2xl"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
+              From easy money management, to financial goals and investments.
+              Open your account in at Finora
+            </p>
+            <!-- Call to action button with AOS animation -->
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <button>Get Your Card Today</button>
+            </div>
+
+            <!-- Statistics section -->
+            <div class="mt-14 flex flex-col gap-6 md:flex-row lg:gap-12">
+              <!-- Left-side statistic -->
+              <aside class="w-full md:w-7/12">
+                <div class="flex justify-center lg:justify-start">
+                  <!-- User avatars with AOS animations -->
+                  <div class="relative flex w-32 items-center">
+                    <img
+                      src="./assets/images/support/Ellipse 10.jpg"
+                      alt="support-1"
+                      class="absolute left-0 h-14 w-14 rounded-full"
+                      data-aos="fade-right"
+                      data-aos-duration="1000"
+                      data-aos-delay="400"
+                    />
+                    <img
+                      src="./assets/images/support/Ellipse 11.jpg"
+                      alt="support-2"
+                      class="absolute left-8 h-14 w-14 rounded-full"
+                      data-aos="fade-right"
+                      data-aos-duration="1000"
+                      data-aos-delay="300"
+                    />
+                    <img
+                      src="./assets/images/support/Ellipse 12.jpg"
+                      alt="support-3"
+                      class="absolute left-16 h-14 w-14 rounded-full"
+                      data-aos="fade-right"
+                      data-aos-duration="1000"
+                      data-aos-delay="200"
+                    />
+                  </div>
+                  <!-- Statistic text with AOS animation -->
+                  <h3
                     data-aos="fade-right"
                     data-aos-duration="1000"
-                    data-aos-delay="400"
-                  />
-                  <img
-                    src="./assets/images/support/Ellipse 11.jpg"
-                    alt="support-2"
-                    class="absolute left-8 h-14 w-14 rounded-full"
-                    data-aos="fade-right"
-                    data-aos-duration="1000"
-                    data-aos-delay="300"
-                  />
-                  <img
-                    src="./assets/images/support/Ellipse 12.jpg"
-                    alt="support-3"
-                    class="absolute left-16 h-14 w-14 rounded-full"
-                    data-aos="fade-right"
-                    data-aos-duration="1000"
-                    data-aos-delay="200"
-                  />
+                    data-aos-delay="100"
+                  >
+                    3Million+
+                  </h3>
                 </div>
-                <h3
+                <!-- Statistic description with AOS animation -->
+                <p
+                  class="mt-4 text-gray"
                   data-aos="fade-right"
                   data-aos-duration="1000"
                   data-aos-delay="100"
                 >
-                  3Million+
-                </h3>
-              </div>
-              <p
-                class="mt-4 text-gray"
-                data-aos="fade-right"
-                data-aos-duration="1000"
-                data-aos-delay="100"
-              >
-                Trusted by million of satisfied users, our financial services
-              </p>
-            </aside>
+                  Trusted by millions of satisfied users, our financial services
+                </p>
+              </aside>
 
-            <aside class="w-full md:w-5/12">
-              <div class="flex justify-center gap-4 lg:justify-start">
-                <h3
-                  data-aos="fade-left"
-                  data-aos-duration="1000"
-                  data-aos-delay="100"
-                >
-                  122K
-                </h3>
+              <!-- Right-side statistic -->
+              <aside class="w-full md:w-5/12">
+                <div class="flex justify-center gap-4 lg:justify-start">
+                  <!-- Statistic value with AOS animation -->
+                  <h3
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    data-aos-delay="100"
+                  >
+                    122K
+                  </h3>
 
-                <div
-                  class="flex items-center gap-1 rounded-full bg-primary px-4 py-2 text-white"
-                  data-aos="fade-left"
-                  data-aos-duration="1000"
-                  data-aos-delay="200"
-                >
-                  <p class="text-xs">24%</p>
-                  <i class="fas fa-arrow-circle-up"></i>
+                  <!-- Percentage change indicator with AOS animation -->
+                  <div
+                    class="flex items-center gap-1 rounded-full bg-primary px-4 py-2 text-white"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    data-aos-delay="200"
+                  >
+                    <p class="text-xs">24%</p>
+                    <i class="fas fa-arrow-circle-up"></i>
+                  </div>
                 </div>
-              </div>
 
-              <p
-                class="mt-4 text-gray"
-                data-aos="fade-left"
-                data-aos-duration="1000"
-                data-aos-delay="300"
-              >
-                Our Last Month Customer
-              </p>
-            </aside>
+                <!-- Statistic description with AOS animation -->
+                <p
+                  class="mt-4 text-gray"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-delay="300"
+                >
+                  Our Last Month Customer
+                </p>
+              </aside>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
 
+      <section class="container py-14 lg:py-28">
+        <div
+          class="grid grid-cols-1 items-center divide-y divide-primary text-center lg:grid-cols-2 lg:divide-x lg:divide-y-0 lg:text-left"
+        >
+          <h2
+            class="pb-4 lg:w-11/12 lg:pb-0 lg:pr-2"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            Innovative Features for Modern Life
+          </h2>
+          <p
+            class="pt-4 lg:pl-4 lg:pt-0"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            In today's fast-paced digital world, your credit card should do more
+            than just facilitate transactions. At Finora Credit, we've
+            reimagined what a credit card can be, integrating cutting-edge
+            technology with your everyday financial need
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Font Awesome script for icons -->
     <script
       src="https://kit.fontawesome.com/b50fc748ca.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Lenis Script for Smooth Scroll -->
+    <script src="https://unpkg.com/lenis@1.1.11/dist/lenis.min.js"></script>
+    <!-- AOS script for animations -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Main JavaScript file -->
     <script src="./main.js"></script>
   </body>
 </html>
