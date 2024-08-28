@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "MaximaNouva";
+  src: url("./assets/fonts/MaximaNouva-Bold-AF65d8537f09f63.otf")
+    format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MaximaNouva";
+  src: url("./assets/fonts/MaximaNouva-BoldItalic-AF65d8537f029ea.otf")
+    format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "MaximaNouva";
+  src: url("./assets/fonts/MaximaNouva-ExtraBold-AF65d8537f10cfc.otf")
+    format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MaximaNouva";
+  src: url("./assets/fonts/MaximaNouva-ExtraBoldItalic-AF65d8537f176bc.otf")
+    format("opentype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "MaximaNouva";
+  src: url("./assets/fonts/MaximaNouva-Regular-AF65d8537f25976.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MaximaNouva";
+  src: url("./assets/fonts/MaximaNouva-Italic-AF65d8537f1ef1f.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "MaximaNouva";
+  src: url("./assets/fonts/MaximaNouva-SemiBold-AF65d8537f2c210.otf")
+    format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MaximaNouva";
+  src: url("./assets/fonts/MaximaNouva-Thin-AF65d8537f32f3a.otf")
+    format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MaximaNouva";
+  src: url("./assets/fonts/MaximaNouva-ThinItalic-AF65d8537f395bd.otf")
+    format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
