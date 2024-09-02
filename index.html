@@ -209,26 +209,425 @@
       </header>
 
       <section class="container py-14 lg:py-28">
+        <!-- Main container section with padding for different screen sizes -->
+
         <div
           class="grid grid-cols-1 items-center divide-y divide-primary text-center lg:grid-cols-2 lg:divide-x lg:divide-y-0 lg:text-left"
         >
+          <!-- A grid layout with one column on small screens and two columns on large screens. 
+               Items are centered, and there's a dividing line between them on larger screens. -->
+
           <h2
             class="pb-4 lg:w-11/12 lg:pb-0 lg:pr-2"
             data-aos="fade-right"
             data-aos-duration="1000"
           >
+            <!-- Heading with bottom padding on small screens, and padding adjustments on large screens.
+                 Animations are added for fading in from the right over 1000ms. -->
             Innovative Features for Modern Life
           </h2>
+
           <p
             class="pt-4 lg:pl-4 lg:pt-0"
             data-aos="fade-left"
             data-aos-duration="1000"
           >
+            <!-- Paragraph with top padding on small screens and padding adjustments on large screens.
+                 Animations are added for fading in from the left over 1000ms. -->
             In today's fast-paced digital world, your credit card should do more
             than just facilitate transactions. At Finora Credit, we've
             reimagined what a credit card can be, integrating cutting-edge
-            technology with your everyday financial need
+            technology with your everyday financial needs.
           </p>
+        </div>
+
+        <!-- Features Section -->
+        <div class="mt-16 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <!-- A grid layout for features, with one column on small screens, two columns on medium screens, 
+               and three columns on large screens. Margins and gaps are applied for spacing. -->
+
+          <!-- Feature 1: Smart Budgeting -->
+          <article data-aos="fade-up" data-aos-duration="1000">
+            <!-- Article with animation for fading up over 1000ms -->
+
+            <div
+              class="rounded-lg border border-transparent bg-[size:100%_100%] px-6 py-8 transition hover:border-primary"
+              style="background-image: url(./assets/feature-bg.png)"
+            >
+              <!-- Feature container with rounded corners, transparent border, background image, 
+                   padding, and transition effect for border color on hover. -->
+
+              <div class="mb-8 aspect-square w-16 bg-primary-light"></div>
+              <!-- Placeholder for feature icon or image, with margin, fixed width, and background color -->
+
+              <h3 class="mb-2">Smart Budgeting</h3>
+              <!-- Feature title with bottom margin -->
+
+              <p>
+                AI-powered spending insights to help you manage your finances
+                effortlessly.
+              </p>
+              <!-- Feature description -->
+            </div>
+          </article>
+
+          <!-- Feature 2: Global Acceptance -->
+          <article
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <!-- Article with animation for fading up over 1000ms, delayed by 100ms -->
+
+            <div
+              class="rounded-lg border border-transparent bg-[size:100%_100%] px-6 py-8 transition hover:border-primary"
+              style="background-image: url(./assets/feature-bg.png)"
+            >
+              <!-- Similar structure as Feature 1 -->
+
+              <div class="mb-8 aspect-square w-16 bg-primary-light"></div>
+              <!-- Placeholder for feature icon or image -->
+
+              <h3 class="mb-2">Global Acceptance</h3>
+              <!-- Feature title -->
+
+              <p>
+                Use your card anywhere in the world with zero foreign
+                transaction fees.
+              </p>
+              <!-- Feature description -->
+            </div>
+          </article>
+
+          <!-- Feature 3: Digital-First Security -->
+          <article
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <!-- Article with animation for fading up over 1000ms, delayed by 200ms -->
+
+            <div
+              class="rounded-lg border border-transparent bg-[size:100%_100%] px-6 py-8 transition hover:border-primary"
+              style="background-image: url(./assets/feature-bg.png)"
+            >
+              <!-- Similar structure as Feature 1 and Feature 2 -->
+
+              <div class="mb-8 aspect-square w-16 bg-primary-light"></div>
+              <!-- Placeholder for feature icon or image -->
+
+              <h3 class="mb-2">Digital-First Security</h3>
+              <!-- Feature title -->
+
+              <p>
+                Advanced encryption and real-time fraud detection to keep your
+                money safe.
+              </p>
+              <!-- Feature description -->
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="container py-7 md:py-14 lg:py-28">
+        <!-- Main container section with different padding values for small, medium, and large screens -->
+
+        <div class="flex flex-col gap-10 lg:flex-row">
+          <!-- Flexbox layout for stacking content vertically on small screens and side-by-side on large screens.
+               A gap is added between the elements. -->
+
+          <div class="relative w-full lg:w-5/12">
+            <!-- A relative positioned div to contain the image and its background decoration, 
+                 taking full width on small screens and 5/12 width on large screens -->
+
+            <div
+              class="absolute -left-3 -top-3 z-0 h-full w-full rounded-2xl bg-primary-light lg:-left-16 lg:-top-10"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            ></div>
+            <!-- A background decoration with a light primary color, positioned absolutely 
+                 to create an offset shadow effect behind the image. It animates by fading in from the right. -->
+
+            <img
+              src="./assets/images/revolutionize.jpeg"
+              class="relative left-3 top-3 h-full rounded-2xl object-cover shadow-[24px_30px_51px_0_#0000001A]"
+              alt="revolutionize"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            />
+            <!-- Main image with rounded corners, positioned relatively to overlap the background decoration.
+                 It has a shadow effect and animates by fading in from the right. -->
+          </div>
+
+          <div class="w-full lg:w-7/12">
+            <!-- A div for the text content, taking full width on small screens and 7/12 width on large screens -->
+
+            <h2 data-aos="fade-left" data-aos-duration="1000">
+              <!-- Heading with animation to fade in from the left -->
+              Revolutionizing Finance with NextGen Credit
+            </h2>
+
+            <p class="mb-6 mt-4" data-aos="fade-left" data-aos-duration="1000">
+              <!-- Paragraph with top and bottom margins, animating by fading in from the left -->
+              At NextGen Credit, we're not just another financial institution –
+              we're pioneers in the credit industry, committed to empowering
+              individuals with innovative financial solutions. Founded in 2020
+              by a team of fintech experts and customer advocates, we've made it
+              our mission to transform the credit experience through
+              cutting-edge technology.
+            </p>
+
+            <ul class="flex flex-col gap-4">
+              <!-- An unordered list with flexbox layout to stack list items vertically, 
+                   with a gap between them -->
+
+              <li
+                class="flex items-center gap-4"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <!-- List item with a flexbox layout to align items horizontally, with a gap between them.
+                     Each list item animates by fading in from the left. -->
+                <div
+                  class="flex aspect-square h-6 w-6 items-center justify-center rounded-full bg-primary-light text-white"
+                >
+                  <i class="fas fa-check text-xs"></i>
+                </div>
+                <!-- A small square div with a checkmark icon, styled with a light primary color background and white text. -->
+                We continuously push the boundaries of what's possible in
+                personal finance.
+              </li>
+
+              <li
+                class="flex items-center gap-4"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <div
+                  class="flex aspect-square h-6 w-6 items-center justify-center rounded-full bg-primary-light text-white"
+                >
+                  <i class="fas fa-check text-xs"></i>
+                </div>
+                <!-- Similar structure as above list item -->
+                Every feature and policy is designed with your best interests in
+                mind.
+              </li>
+
+              <li
+                class="flex items-center gap-4"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <div
+                  class="flex aspect-square h-6 w-6 items-center justify-center rounded-full bg-primary-light text-white"
+                >
+                  <i class="fas fa-check text-xs"></i>
+                </div>
+                <!-- Similar structure as above list item -->
+                We believe in clear communication and no hidden fees – ever.
+              </li>
+
+              <li
+                class="flex items-center gap-4"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <div
+                  class="flex aspect-square h-6 w-6 items-center justify-center rounded-full bg-primary-light text-white"
+                >
+                  <i class="fas fa-check text-xs"></i>
+                </div>
+                <!-- Similar structure as above list item -->
+                We provide tools & education to help you make informed financial
+                decisions.
+              </li>
+
+              <li
+                class="flex items-center gap-4"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <div
+                  class="flex aspect-square h-6 w-6 items-center justify-center rounded-full bg-primary-light text-white"
+                >
+                  <i class="fas fa-check text-xs"></i>
+                </div>
+                <!-- Similar structure as above list item -->
+                Your data & money are protected by the latest in cybersecurity
+                technology.
+              </li>
+            </ul>
+
+            <div class="mt-10" data-aos="fade-left" data-aos-duration="1000">
+              <!-- Button container with top margin and animation to fade in from the left -->
+              <button>Join NextGen Credit Today</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Finaura Cards -->
+
+      <section class="relative">
+        <!-- This section has a relative positioning context, allowing absolute positioning within it. -->
+
+        <img
+          src="./assets/images/section-divider.png"
+          class="absolute -top-1/2 -z-10 h-full w-screen"
+          alt=""
+        />
+        <!-- An image positioned absolutely at the top of the section, with half of it outside the section's top.
+             The z-index ensures it sits behind other content. -->
+
+        <div
+          class="container flex flex-col items-center gap-8 py-7 md:py-14 lg:flex-row lg:py-28"
+        >
+          <!-- Container with flexbox to arrange content vertically on small screens, horizontally on large screens. -->
+
+          <aside class="w-full lg:w-7/12">
+            <!-- Left side content area taking full width on small screens, 7/12 on large screens. -->
+
+            <h2 class="mb-4" data-aos="fade-right" data-aos-duration="1000">
+              Why Choose Our Card?
+            </h2>
+            <!-- Heading with a bottom margin, animated to fade in from the right. -->
+
+            <p
+              class="mb-8 w-11/12"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              In today's fast-paced digital world, your credit card should do
+              more than just facilitate transactions. At Finora Credit, we've
+              reimagined what a credit card can be, integrating cutting-edge
+              technology with your everyday financial need.
+            </p>
+            <!-- Paragraph with a bottom margin and a narrower width, also animated to fade in from the right. -->
+
+            <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+              <!-- A grid container that displays one column on small screens and two columns on large screens. -->
+
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+              >
+                <article
+                  class="rounded-lg border border-[#E7E7E7] bg-white p-4 transition hover:shadow-xl"
+                >
+                  <div class="flex gap-3">
+                    <img
+                      src="./assets/images/features/Rectangle 10.jpg"
+                      alt="feature-1"
+                      class="h-fit"
+                    />
+                    <aside>
+                      <h4>No Annual Fee</h4>
+                      <p class="mt-2">
+                        Enjoy all the benefits without any yearly charges.
+                      </p>
+                    </aside>
+                  </div>
+                </article>
+              </div>
+              <!-- The first feature card with an image and text, animated to fade in from the right with a delay. -->
+
+              <div data-aos="fade-right" data-aos-duration="1000">
+                <article
+                  class="rounded-lg border border-[#E7E7E7] bg-white p-4 transition hover:shadow-xl"
+                >
+                  <div class="flex gap-3">
+                    <img
+                      src="./assets/images/features/Rectangle 10-1.jpg"
+                      alt="feature-1"
+                      class="h-fit"
+                    />
+                    <aside>
+                      <h4>Advanced Security</h4>
+                      <p class="mt-2">
+                        Rest easy with our state-of-the-art fraud protection.
+                      </p>
+                    </aside>
+                  </div>
+                </article>
+              </div>
+              <!-- The second feature card with a different image and text, also animated to fade in from the right. -->
+
+              <div
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+              >
+                <article
+                  class="rounded-lg border border-[#E7E7E7] bg-white p-4 transition hover:shadow-xl"
+                >
+                  <div class="flex gap-3">
+                    <img
+                      src="./assets/images/features/Rectangle 10-2.jpg"
+                      alt="feature-1"
+                      class="h-fit"
+                    />
+                    <aside>
+                      <h4>Rewards Program</h4>
+                      <p class="mt-2">
+                        Earn points on every purchase, redeemable for cash back.
+                      </p>
+                    </aside>
+                  </div>
+                </article>
+              </div>
+              <!-- The third feature card, similar to the others, with a delay on the animation. -->
+
+              <div data-aos="fade-right" data-aos-duration="1000">
+                <article
+                  class="rounded-lg border border-[#E7E7E7] bg-white p-4 transition hover:shadow-xl"
+                >
+                  <div class="flex gap-3">
+                    <img
+                      src="./assets/images/features/Rectangle 10-3.jpg"
+                      alt="feature-1"
+                      class="h-fit"
+                    />
+                    <aside>
+                      <h4>Instant Approval</h4>
+                      <p class="mt-2">
+                        Get approved in minutes with our streamlined
+                        application.
+                      </p>
+                    </aside>
+                  </div>
+                </article>
+              </div>
+              <!-- The fourth feature card, similarly styled, and animated. -->
+            </div>
+
+            <div class="mt-10" data-aos="fade-right" data-aos-duration="1000">
+              <button>Join NextGen Credit Today</button>
+            </div>
+            <!-- Call-to-action button to join, animated to fade in from the right. -->
+          </aside>
+
+          <aside class="relative w-full lg:w-5/12">
+            <!-- Right side content area, positioned relative with full width on small screens, 5/12 on large screens. -->
+
+            <div
+              class="absolute left-4 top-4 z-0 h-full w-full rounded-2xl bg-primary-light lg:left-8 lg:top-8"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            ></div>
+            <!-- A background element positioned behind the image, with animations and rounded corners. -->
+
+            <img
+              src="./assets/images/why-choose.jpeg"
+              class="aspect-square h-full rounded-2xl object-cover shadow-[24px_30px_51px_0_#0000001A]"
+              alt="revolutionize"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            />
+            <!-- The main image, styled to be square, with rounded corners, a shadow, and animated to fade in from the left. -->
+          </aside>
         </div>
       </section>
     </div>
