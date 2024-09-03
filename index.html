@@ -23,10 +23,11 @@
     <!-- Container for the entire page -->
     <div class="w-screen overflow-x-hidden">
       <!-- Navigation bar -->
-      <nav>
+      <nav id="navbar-container" class="fixed left-0 top-0 z-50 h-fit w-full">
         <!-- Container for navigation content, including logo and menu items -->
         <div
-          class="container absolute left-0 right-0 mx-auto flex items-center justify-between py-8 lg:items-center"
+          class="container absolute left-0 right-0 mx-auto flex items-center justify-between py-6 lg:items-center lg:py-8"
+          id="navbar-content"
         >
           <!-- Logo -->
           <a href="#" class="z-30">
@@ -636,12 +637,21 @@
         </div>
       </section>
 
-      <div class="bg-background py-14 lg:py-28">
+      <!-- Testimonial Section -->
+      <section class="bg-background py-14 lg:py-28">
+        <!-- Section with background color and vertical padding, larger on large screens. -->
+
         <div class="relative">
-          <section
+          <!-- Container with relative positioning to allow absolute positioning of child elements. -->
+
+          <div
             class="container grid grid-cols-1 items-center gap-11 lg:grid-cols-2"
           >
+            <!-- A container using grid layout, with one column on small screens and two columns on large screens. -->
+
             <aside class="relative lg:static">
+              <!-- A side section, positioned relatively on small screens, static on large screens. -->
+
               <img
                 src="./assets/images/testimonial-image.png"
                 class="relative z-10"
@@ -649,21 +659,27 @@
                 data-aos="fade-right"
                 data-aos-duration="1000"
               />
+              <!-- Main testimonial image, positioned relative with a higher z-index to overlay the background image. Animated to fade in from the right. -->
+
               <img
                 src="./assets/images/testimonial-image-bg.png"
                 class="absolute -left-8 bottom-0 z-0 h-full w-full lg:w-1/2"
                 alt="testimonial"
               />
+              <!-- Background image for the testimonial, positioned absolutely, partially offset to the left. It takes full width on small screens and half width on large screens. -->
             </aside>
 
             <aside class="relative">
+              <!-- The second side section, with relative positioning. -->
+
               <h2
                 class="mb-10 lg:text-5xl"
                 data-aos="fade-left"
                 data-aos-duration="1000"
               >
-                3million+ People Believe Us for There Money
+                3million+ People Believe Us for Their Money
               </h2>
+              <!-- Testimonial heading with a bottom margin. The text size increases on large screens. Animated to fade in from the left. -->
 
               <!-- Slider main container -->
               <div
@@ -672,8 +688,12 @@
                 data-aos-duration="1000"
                 data-aos-delay="100"
               >
+                <!-- Main container for the swiper slider, with animation to fade in from the left with a delay. -->
+
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
+                  <!-- Wrapper for the swiper slides. -->
+
                   <!-- Slides -->
                   <div class="swiper-slide">
                     <p class="mb-10">
@@ -681,12 +701,13 @@
                       should do more than just facilitate transactions. At
                       Finora Credit, we've reimagined what a credit card can be,
                       integrating cutting-edge technology with your everyday
-                      financial need
+                      financial need.
                     </p>
 
                     <h3 class="mb-2">Michael T.</h3>
                     <p class="text-gray">Cardholder since 2022</p>
                   </div>
+                  <!-- First testimonial slide, with a quote and author details. -->
 
                   <div class="swiper-slide">
                     <p class="mb-10">
@@ -694,12 +715,13 @@
                       should do more than just facilitate transactions. At
                       Finora Credit, we've reimagined what a credit card can be,
                       integrating cutting-edge technology with your everyday
-                      financial need
+                      financial need.
                     </p>
 
                     <h3 class="mb-2">Michael T.</h3>
                     <p class="text-gray">Cardholder since 2022</p>
                   </div>
+                  <!-- Second testimonial slide, similar to the first. -->
 
                   <div class="swiper-slide">
                     <p class="mb-10">
@@ -707,35 +729,228 @@
                       should do more than just facilitate transactions. At
                       Finora Credit, we've reimagined what a credit card can be,
                       integrating cutting-edge technology with your everyday
-                      financial need
+                      financial need.
                     </p>
 
                     <h3 class="mb-2">Michael T.</h3>
                     <p class="text-gray">Cardholder since 2022</p>
                   </div>
+                  <!-- Third testimonial slide, similar to the others. -->
                 </div>
+
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
-                <!-- <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div> -->
-
-                <!-- If we need scrollbar -->
-                <!-- <div class="swiper-scrollbar"></div> -->
               </div>
               <div class="absolute bottom-0 right-0 z-50 flex gap-3">
+                <!-- Container for custom navigation buttons, positioned absolutely at the bottom-right corner. -->
+
                 <button class="slide-left px-6 py-4 lg:px-4 lg:py-2">
                   <i class="fas fa-arrow-left"></i>
                 </button>
+                <!-- Custom left navigation button with padding that adjusts on large screens. -->
+
                 <button class="slide-right px-6 py-4 lg:px-4 lg:py-2">
                   <i class="fas fa-arrow-right"></i>
                 </button>
+                <!-- Custom right navigation button, similar to the left button. -->
               </div>
             </aside>
-          </section>
+          </div>
         </div>
-      </div>
+      </section>
+      <section
+        class="bg-bottom bg-no-repeat lg:bg-[size:100%_72%]"
+        style="background-image: url(./assets/images/financial-game-bg.jpg)"
+      >
+        <!-- Section with a background image positioned at the bottom and no repeat. On large screens, the background image size is adjusted. -->
+
+        <div class="container flex items-end text-white">
+          <!-- Container using flexbox to align items at the bottom. The text color is set to white. -->
+
+          <div class="w-full py-8 lg:w-7/12 lg:pb-10">
+            <!-- Full-width column on small screens, reduced to 7/12 width on large screens, with vertical padding. -->
+
+            <h2 class="mb-4" data-aos="fade-right" data-aos-duration="1000">
+              Ready to Elevate Your Financial Game?
+            </h2>
+            <!-- Heading with a bottom margin, animated to fade in from the right. -->
+
+            <p class="mb-7" data-aos="fade-right" data-aos-duration="1000">
+              Apply now and get a decision in minutes. No hidden fees, no
+              surprises - just smart, simple credit.
+            </p>
+            <!-- Paragraph with a bottom margin, animated to fade in from the right. -->
+
+            <div data-aos="fade-right" data-aos-duration="1000">
+              <button class="white">Join NextGen Credit Today</button>
+              <!-- Call-to-action button, animated to fade in from the right. -->
+            </div>
+          </div>
+
+          <div class="hidden w-0 lg:block lg:w-5/12">
+            <!-- Second column that is hidden on small screens, becomes visible and takes up 5/12 width on large screens. -->
+
+            <img
+              src="./assets/images/join-image.png"
+              alt=""
+              class="w-full"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            />
+            <!-- Image that takes full width of its container, animated to fade in from the left. -->
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div
+          class="container flex flex-col gap-10 py-12 text-gray lg:flex-row lg:py-24"
+        >
+          <aside class="w-full lg:w-1/3">
+            <img src="./assets/images/logo.png" alt="logo" class="w-1/2" />
+            <p class="my-2">Make your complicated finance more simple</p>
+            <p>
+              Phone : 833-900-8338 <br />
+              Mail:
+              <a href="mailto:support@raddito.com">support@raddito.com</a>
+              <br />
+              Location: Saint Paul, MN 55112-6629 USA
+            </p>
+          </aside>
+
+          <aside
+            class="flex w-full flex-col justify-between gap-10 lg:w-2/3 lg:flex-row"
+          >
+            <div>
+              <h4 class="font-bold text-black">Quick Link</h4>
+              <ul class="mt-5 flex flex-col gap-3">
+                <li>
+                  <a class="transition hover:text-black" href="#">About Us</a>
+                </li>
+                <li>
+                  <a class="transition hover:text-black" href="#">Features</a>
+                </li>
+                <li>
+                  <a class="transition hover:text-black" href="#">Why Us</a>
+                </li>
+                <li>
+                  <a class="transition hover:text-black" href="#">Card</a>
+                </li>
+                <li>
+                  <a class="transition hover:text-black" href="#"
+                    >Testimonial</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-bold text-black">Finora</h4>
+              <ul class="mt-5 flex flex-col gap-3">
+                <li>
+                  <a class="transition hover:text-black" href="#">Payment</a>
+                </li>
+                <li>
+                  <a class="transition hover:text-black" href="#">Card</a>
+                </li>
+                <li>
+                  <a class="transition hover:text-black" href="#">Pricing</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-bold text-black">Support</h4>
+              <ul class="mt-5 flex flex-col gap-3">
+                <li>
+                  <a class="transition hover:text-black" href="#">Contact</a>
+                </li>
+                <li>
+                  <a class="transition hover:text-black" href="#">FAQs</a>
+                </li>
+                <li>
+                  <a class="transition hover:text-black" href="#"
+                    >Help Center</a
+                  >
+                </li>
+                <li>
+                  <a class="transition hover:text-black" href="#"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a class="transition hover:text-black" href="#"
+                    >Term of Service</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="font-bold text-black">Follow us</h4>
+              <ul class="mt-5 flex flex-col gap-3">
+                <li>
+                  <a
+                    class="transition hover:text-black"
+                    href="https://www.linkedin.com/company/radditollc/"
+                    target="_blank"
+                    rel="noreferrer"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="transition hover:text-black"
+                    href="https://www.facebook.com/RadditoLLC"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="transition hover:text-black"
+                    href="https://www.instagram.com/radditollc"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="transition hover:text-black"
+                    href="https://twitter.com/RadditoLLC"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Twitter</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="transition hover:text-black"
+                    href="https://medium.com/@raddito22"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Medium</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+
+        <hr class="h-px bg-primary" />
+
+        <div class="container py-6 text-center">
+          Copyright &copy;<span id="year"></span> Developed by
+          <a
+            href="https://raddito.com/"
+            target="_blank"
+            class="font-bold text-primary"
+            >Raddito LLC</a
+          >.
+        </div>
+      </footer>
     </div>
 
     <!-- Font Awesome script for icons -->

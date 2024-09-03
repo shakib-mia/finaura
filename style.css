@@ -18,6 +18,10 @@ button {
   @apply rounded-md bg-primary px-5 py-3 text-white outline outline-2 outline-offset-0 outline-primary transition hover:bg-primary-dark focus:outline-offset-2 disabled:cursor-not-allowed disabled:bg-primary-light disabled:outline-primary-light lg:px-10 lg:py-4;
 }
 
+button.white {
+  @apply rounded-md bg-white px-5 py-3 text-primary outline outline-2 outline-offset-0 outline-white transition hover:bg-white focus:outline-offset-2 disabled:cursor-not-allowed disabled:bg-white disabled:outline-white lg:px-10 lg:py-4;
+}
+
 #nav-check:checked + #navbar {
   @apply h-[28rem] pb-8 pt-24 shadow-2xl lg:h-fit lg:pb-0 lg:pt-0;
 }
