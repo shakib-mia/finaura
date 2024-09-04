@@ -18,7 +18,9 @@ function raf(time) {
 
 requestAnimationFrame(raf);
 
-AOS.init();
+AOS.init({
+  once: true,
+});
 
 // Swiper
 const swiper = new Swiper(".swiper", {

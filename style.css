@@ -23,7 +23,7 @@ button.white {
 }
 
 #nav-check:checked + #navbar {
-  @apply h-[28rem] pb-8 pt-24 shadow-2xl lg:h-fit lg:pb-0 lg:pt-0;
+  @apply h-[28rem] pb-8 pt-20 shadow-2xl lg:h-fit lg:pb-0 lg:pt-0;
 }
 
 h1 {
