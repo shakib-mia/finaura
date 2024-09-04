@@ -107,7 +107,7 @@
 
       <!-- Hero section -->
       <header
-        class="flex items-center bg-[size:0] bg-center bg-no-repeat py-24 lg:h-screen lg:bg-[size:100%] lg:py-0"
+        class="flex items-center bg-[size:0] bg-center bg-no-repeat pb-0 pt-32 lg:h-screen lg:bg-[size:100%] lg:py-0"
         style="background-image: url(./assets/hero.jpg)"
       >
         <!-- Container for hero content -->
@@ -179,7 +179,7 @@
                 </div>
                 <!-- Statistic description with AOS animation -->
                 <p
-                  class="mt-4 text-gray"
+                  class="mt-6 w-11/12 text-gray"
                   data-aos="fade-right"
                   data-aos-duration="1000"
                   data-aos-delay="100"
@@ -231,7 +231,7 @@
         <!-- Main container section with padding for different screen sizes -->
 
         <div
-          class="grid grid-cols-1 items-center divide-y divide-primary text-center lg:grid-cols-2 lg:divide-x lg:divide-y-0 lg:text-left"
+          class="grid grid-cols-1 items-center divide-y divide-primary lg:grid-cols-2 lg:divide-x lg:divide-y-0"
         >
           <!-- A grid layout with one column on small screens and two columns on large screens. 
                Items are centered, and there's a dividing line between them on larger screens. -->
@@ -674,7 +674,7 @@
           >
             <!-- A container using grid layout, with one column on small screens and two columns on large screens. -->
 
-            <aside class="relative lg:static">
+            <aside class="relative order-2 lg:static lg:order-1">
               <!-- A side section, positioned relatively on small screens, static on large screens. -->
 
               <img
@@ -688,13 +688,13 @@
 
               <img
                 src="./assets/images/testimonial-image-bg.png"
-                class="absolute -left-8 bottom-0 z-0 h-full w-full lg:w-1/2"
+                class="absolute bottom-0 left-0 z-0 h-full w-9/12 rounded-xl object-cover lg:w-1/2"
                 alt="testimonial"
               />
               <!-- Background image for the testimonial, positioned absolutely, partially offset to the left. It takes full width on small screens and half width on large screens. -->
             </aside>
 
-            <aside class="relative">
+            <aside class="relative order-1 lg:order-2">
               <!-- The second side section, with relative positioning. -->
 
               <h2
