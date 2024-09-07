@@ -1,10 +1,10 @@
-# Finora
+# Finaura
 
-## Finora - NextGen Credit Website with Vite and Tailwind CSS
+## Finaura - NextGen Credit Website with Vite and Tailwind CSS
 
-Finora is an innovative credit service platform, reimagining how financial management should work in today’s digital age. Built with Vite and Tailwind CSS, the website offers a responsive design and features such as smart budgeting tools, global card acceptance, and advanced security measures.
+Finaura is an innovative credit service platform, reimagining how financial management should work in today’s digital age. Built with Vite and Tailwind CSS, the website offers a responsive design and features such as smart budgeting tools, global card acceptance, and advanced security measures.
 
-Live Preview: [Finora](#)
+Live Preview: [Finaura](https://finaura-vite.netlify.app/)
 
 ## Features:
 
@@ -42,13 +42,13 @@ Live Preview: [Finora](#)
 
 ## Credits Policy - GPL License:
 
-Finora is licensed under the GNU General Public License (GPL), promoting open-source collaboration and transparency. While inspired by industry-leading financial technology, the design and development are original contributions by Raddito.
+Finaura is licensed under the GNU General Public License (GPL), promoting open-source collaboration and transparency. While inspired by industry-leading financial technology, the design and development are original contributions by Raddito.
 
 ### Our Credits Policy under GPL License:
 
-- **Original Design Inspiration:** Finora draws from fintech innovations, ensuring a modern and user-friendly experience.
+- **Original Design Inspiration:** Finaura draws from fintech innovations, ensuring a modern and user-friendly experience.
 - **Development and Coding:** Built independently with adherence to GPL standards across HTML, CSS, and JavaScript.
-- **GPL Licensing:** Users can freely utilize, modify, and distribute Finora under GPL terms, encouraging community contributions.
+- **GPL Licensing:** Users can freely utilize, modify, and distribute Finaura under GPL terms, encouraging community contributions.
 - **Attribution:** While not required, attribution to the original developers fosters goodwill within the community.
 - **Non-Endorsement:** The GPL license highlights our unique contributions without implying endorsement by original creators.
 
